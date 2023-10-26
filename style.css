@@ -261,3 +261,7 @@ nav ul li a:hover {
 .grid-item{
     pointer-events: none;
 }
+
+p a {
+    pointer-events: auto; /* Make links clickable */
+}
