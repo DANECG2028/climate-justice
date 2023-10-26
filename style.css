@@ -77,11 +77,13 @@ nav a {
 
     .grid-container {
         display: flex;
-        flex-direction: column; /* Display grid items in a single column for smaller screens */
+        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .grid-item {
-        margin-bottom: 20px; /* Add spacing between grid items for smaller screens */
+        margin-bottom: 20px;
+        
     }
 
     .image-overlay img {
