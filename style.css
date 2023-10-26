@@ -38,6 +38,7 @@ nav ul {
     list-style: none;
     display: flex;
     margin-top: 1rem;
+    padding: 0;
 }
 
 nav ul li {
@@ -48,6 +49,24 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        margin-top: 0; /* Remove margin for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Display navigation items as blocks on smaller screens */
+        margin: 0; /* Remove margin for smaller screens */
+        padding: 0.5rem 0; /* Add padding to separate items */
+    }
 }
 
 section {
