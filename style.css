@@ -77,9 +77,9 @@ nav a {
     }
 
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-items: center;
         
     }
@@ -88,17 +88,12 @@ nav a {
         background-color: #fff;
         padding: 1rem;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
+        max-width: 100%;
         height: auto;
         z-index: 0;
         border-radius: 10px;
         transition: box-shadow 0.3s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        pointer-events: none;
     }
 
     .grid-item:hover {
