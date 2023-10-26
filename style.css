@@ -55,17 +55,17 @@ nav a {
 @media (max-width: 768px) {
 
     header {
-        padding: 1rem 0; /* Reduce header padding for smaller screens */
+        padding: 1rem 0; 
     }
 
     header h1 {
         font-size: 1.5rem;
-        right: 10px; /* Adjust position for smaller screens */
+        right: 10px; 
         top: 0;
     }
 
     nav ul li {
-        margin-right: 0; /* Remove margin between navigation items */
+        margin-right: 0; 
     }
 
     nav ul {
@@ -73,11 +73,17 @@ nav a {
     }
 
     section {
-        padding: 1rem; /* Reduce section padding for smaller screens */
+        padding: 1rem; 
     }
 
     .grid-section .grid-container {
-        grid-template-columns: 1fr; /* Set a single column for smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid-section .grid-item {
+        margin-bottom: 20px;
+        max-width: 100%;
     }
 
     .image-overlay img {
