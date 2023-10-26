@@ -68,6 +68,13 @@ nav a {
         top: 0;
     }
 
+     /* Stack the words "Reflective" and "Presentation" */
+     header h1::before,
+     header h1::after {
+         content: "";
+         display: block;
+     }
+
     /* Adjust navigation menu layout for smaller screens */
     nav ul {
         display: flex;
