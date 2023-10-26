@@ -48,7 +48,7 @@ nav a {
     color: whitesmoke;
 }
 
-/* Mobile-first responsive design */
+
 @media (max-width: 768px) {
     header {
         padding: 1rem 0;
@@ -102,9 +102,9 @@ nav a {
 
     .grid-item img {
         max-width: 100%;
-        height: auto; /* Center vertically */
-        display: block; /* Center horizontally */
-        margin: 0 auto; /* Center the image horizontally */
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
         border-radius: 10px;
         pointer-events: auto;
     }
@@ -246,13 +246,13 @@ nav ul li a:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Apply styles for the top image */
+
 #image-top img {
     max-width: 100%;
     height: auto;
 }
 
-/* Apply styles for the bottom image */
+
 #image-bottom img {
     max-width: 100%;
     height: auto;
@@ -263,5 +263,6 @@ nav ul li a:hover {
 }
 
 p a {
-    pointer-events: auto; /* Make links clickable */
+    pointer-events: auto; 
 }
+
