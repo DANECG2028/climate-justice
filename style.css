@@ -53,19 +53,40 @@ nav a {
 
 /* Mobile-first responsive design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem; /* Reduce font size for smaller screens */
+
+    header {
+        padding: 1rem 0; /* Reduce header padding for smaller screens */
     }
 
-    nav ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
-        margin-top: 0; /* Remove margin for smaller screens */
+    header h1 {
+        font-size: 1.5rem;
+        right: 10px; /* Adjust position for smaller screens */
     }
 
     nav ul li {
-        display: block; /* Display navigation items as blocks on smaller screens */
-        margin: 0; /* Remove margin for smaller screens */
-        padding: 0.5rem 0; /* Add padding to separate items */
+        margin-right: 0; /* Remove margin between navigation items */
+    }
+
+    nav ul {
+        margin-top: 0;
+    }
+
+    section {
+        padding: 1rem; /* Reduce section padding for smaller screens */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Display grid items in a single column for smaller screens */
+    }
+
+    .grid-item {
+        margin-bottom: 1rem; /* Add spacing between grid items for smaller screens */
+    }
+
+    .image-overlay img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 }
 
@@ -131,15 +152,15 @@ footer {
 }
 p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 h2{
     text-align: center;
-    font-size: 2rem ;
+    font-size: 1.8rem ;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .source-list {
