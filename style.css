@@ -57,6 +57,23 @@ nav a {
 
 /* Media query for screens with a maximum width of 768px (e.g., mobile devices) */
 @media (max-width: 768px) {
+
+    /* Adjust padding and stack the words for the specific header */
+    .reflective-header {
+        padding: 1rem 0;
+    }
+
+    .reflective-header h1 {
+        font-size: 1.5rem;
+        right: 10px;
+        top: 0;
+    }
+
+    .reflective-header h1::before,
+    .reflective-header h1::after {
+        content: "";
+        display: block;
+    }
     /* Adjust header padding and font size for smaller screens */
     header {
         padding: 1rem 0;
@@ -67,13 +84,6 @@ nav a {
         right: 10px;
         top: 0;
     }
-
-     /* Stack the words "Reflective" and "Presentation" */
-     header h1::before,
-     header h1::after {
-         content: "";
-         display: block;
-     }
 
     /* Adjust navigation menu layout for smaller screens */
     nav ul {
