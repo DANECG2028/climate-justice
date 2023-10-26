@@ -61,6 +61,7 @@ nav a {
     header h1 {
         font-size: 1.5rem;
         right: 10px; /* Adjust position for smaller screens */
+        top: 0;
     }
 
     nav ul li {
@@ -77,8 +78,9 @@ nav a {
 
     .grid-container {
         display: flex;
-        flex-direction: column;
         grid-template-columns: 1fr;
+        grid-gap: 20px;
+        
     }
 
     .grid-item {
