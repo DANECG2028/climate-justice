@@ -75,7 +75,7 @@ nav a {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 60px;
+        grid-gap: 20px;
         justify-items: center;
         
     }
@@ -84,8 +84,8 @@ nav a {
         background-color: #fff;
         padding: 1rem;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        width: 400px;
-        height: 500px;
+        width: 80%;
+        height: auto;
         z-index: 0;
         border-radius: 10px;
         transition: box-shadow 0.3s;
@@ -103,7 +103,7 @@ nav a {
 
     .grid-item img {
         max-width: 100%;
-        max-height: 100%; /* Center vertically */
+        height: auto; /* Center vertically */
         display: block; /* Center horizontally */
         margin: 0 auto; /* Center the image horizontally */
         border-radius: 10px;
