@@ -76,16 +76,8 @@ nav a {
         padding: 1rem; /* Reduce section padding for smaller screens */
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        
-        
-    }
-
-    .grid-item {
-        margin-bottom: 20px;
-        
+    .grid-section .grid-container {
+        grid-template-columns: 1fr; /* Set a single column for smaller screens */
     }
 
     .image-overlay img {
@@ -250,6 +242,7 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto; /* Let the height ad*/
 }
+
 
 
 
