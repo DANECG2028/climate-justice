@@ -76,11 +76,12 @@ nav a {
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Display grid items in a single column for smaller screens */
+        display: flex;
+        flex-direction: column; /* Display grid items in a single column for smaller screens */
     }
 
     .grid-item {
-        margin-bottom: 1rem; /* Add spacing between grid items for smaller screens */
+        margin-bottom: 20px; /* Add spacing between grid items for smaller screens */
     }
 
     .image-overlay img {
@@ -232,6 +233,18 @@ nav ul li a:hover {
 
 #impact-on-communities li {
     margin-bottom: 0.5rem;
+}
+
+/* Apply styles for the top image */
+#image-top img {
+    max-width: 100%;
+    height: auto; /* Let the height adjust proportionally */
+}
+
+/* Apply styles for the bottom image */
+#image-bottom img {
+    max-width: 100%;
+    height: auto; /* Let the height ad*/
 }
 
 
