@@ -1,8 +1,10 @@
+/* Reset default margin and padding for elements like body, headings, and paragraphs */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
+/* Define base styles for the entire page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -10,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Style the header section with a background image */
 header {
     background-image: url(./images/doom-2372308_1920.jpg);
     background-size: cover;
@@ -20,6 +23,7 @@ header {
     position: relative;
 }
 
+/* Style the main heading in the header section */
 header h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -31,6 +35,7 @@ header h1 {
     font-style: italic;
 }
 
+/* Style the navigation menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -38,18 +43,21 @@ nav ul {
     padding: 0;
 }
 
+/* Style individual items in the navigation menu */
 nav ul li {
     display: inline;
     margin-right: 1rem;
 }
 
+/* Style the links in the navigation menu */
 nav a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-
+/* Media query for screens with a maximum width of 768px (e.g., mobile devices) */
 @media (max-width: 768px) {
+    /* Adjust header padding and font size for smaller screens */
     header {
         padding: 1rem 0;
     }
@@ -60,6 +68,7 @@ nav a {
         top: 0;
     }
 
+    /* Adjust navigation menu layout for smaller screens */
     nav ul {
         display: flex;
         flex-direction: column;
@@ -71,11 +80,11 @@ nav a {
         padding: 5px 0;
     }
 
-
+    /* Apply styles to sections in the main content area */
     section {
         padding: 1rem;
     }
-
+    /* Adjust layout for grid items */
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -84,6 +93,7 @@ nav a {
         
     }
 
+    /* Style individual grid items */
     .grid-item {
         background-color: #fff;
         padding: 1rem;
@@ -95,11 +105,13 @@ nav a {
         transition: box-shadow 0.3s;
         text-align: center;
     }
-
+    
+    /* Apply hover effect to grid items */
     .grid-item:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     }
 
+    /* Style images inside grid items */
     .grid-item img {
         max-width: 100%;
         height: auto; 
@@ -109,6 +121,7 @@ nav a {
         pointer-events: auto;
     }
 
+    /* Style image overlays */
     .image-overlay img {
         max-width: 100%;
         height: auto;
@@ -116,19 +129,23 @@ nav a {
     }
 }
 
+/* Apply consistent padding to sections in the main content area */
 section {
     padding: 2rem;
 }
 
+/* Style the container for top images */
 .image-top-container {
     display: -moz-inline-grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+/* Apply hover effect to grid items */
 .grid-item:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Style images inside grid items */
 .grid-item img {
     max-width: 100%;
     max-height: 100%;
@@ -138,6 +155,7 @@ section {
     pointer-events: auto;
 }
 
+/* Style the footer section */
 footer {
     text-align: center;
     background-color: #333;
@@ -145,12 +163,14 @@ footer {
     padding: 1rem 0;
 }
 
+/* Apply grid layout to the image containers */
 .image-top-container {
     display: -moz-inline-grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 30px;
 }
 
+/* Style the image overlays */
 .image-overlay {
     position: relative;
     text-align: center;
@@ -165,20 +185,24 @@ footer {
     border-radius: 10px;
 }
 
+/* Style general paragraphs */
 p {
     text-align: center;
     font-size: 1.2rem;
 }
 
+/* Style level 2 headings */
 h2 {
     text-align: center;
     font-size: 1.8rem;
 }
 
+/* Style level 3 headings */
 h3 {
     font-size: 1.2rem;
 }
 
+/* Style source lists */
 .source-list {
     list-style: none;
     padding: 0;
@@ -189,31 +213,37 @@ h3 {
     padding: 1rem 0;
 }
 
+/* Style items in source lists */
 .source-list li {
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
+/* Style links in source lists */
 .source-list a {
     text-decoration: none;
     color: #0074d9;
     transition: color 0.3s;
 }
 
+/* Apply hover effect to links in source lists */
 .source-list a:hover {
     color: #fff;
 }
 
+/* Style navigation links */
 nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     transition: color 0.3s;
 }
 
+/* Apply hover effect to navigation links */
 nav ul li a:hover {
     color: #0074d9;
 }
 
+/* Style the "impact-on-communities" section */
 #impact-on-communities {
     background-color: #f7f7f7;
     padding: 2rem;
@@ -223,6 +253,7 @@ nav ul li a:hover {
     margin: 2rem 0;
 }
 
+/* Style headings and paragraphs within the "impact-on-communities" section */
 #impact-on-communities h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -234,6 +265,7 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
+/* Style unordered lists within the "impact-on-communities" section */
 #impact-on-communities ul {
     text-align: left;
     font-size: 1.5rem;
@@ -242,11 +274,13 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
+/* Style list items within the "impact-on-communities" section */
+
 #impact-on-communities li {
     margin-bottom: 0.5rem;
 }
 
-
+/* Style images with ID "image-top" and "image-bottom" */
 #image-top img {
     max-width: 100%;
     height: auto;
@@ -258,10 +292,12 @@ nav ul li a:hover {
     height: auto;
 }
 
+/* Disable pointer events for grid items, allowing clicks to pass through */
 .grid-item{
     pointer-events: none;
 }
 
+/* Enable pointer events for links within paragraphs */
 p a {
     pointer-events: auto; 
 }
