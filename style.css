@@ -9,6 +9,7 @@ body {
     background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
+    
 }
 
 header {
@@ -24,10 +25,12 @@ header {
 header h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: whitesmoke;
+    color: rgb(72, 255, 0);
     position: absolute;
     right: 20px;
     top: 0;
+    font-family:'Times New Roman', Times, serif ;
+    font-style: italic;
     
 }
 
@@ -67,6 +70,11 @@ section {
     height: auto;
     z-index: 0;
     border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.grid-item:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .grid-item img {
@@ -114,5 +122,78 @@ h2{
 h3{
     font-size: 1.5rem;
 }
+
+.source-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.source-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.source-list a {
+    text-decoration: none;
+    color: #0074d9;
+    transition: color 0.3s;
+}
+
+.source-list a:hover {
+    color: #fff; 
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #0074d9; 
+}
+
+
+
+#impact-on-communities {
+    background-color: #f7f7f7; 
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0; 
+}
+
+#impact-on-communities h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#impact-on-communities p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#impact-on-communities ul {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#impact-on-communities li {
+    margin-bottom: 0.5rem;
+}
+
+
 
 
