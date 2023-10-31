@@ -55,101 +55,6 @@ nav a {
     color: whitesmoke;
 }
 
-/* Media query for screens with a maximum width of 768px (e.g., mobile devices) */
-@media (max-width: 768px) {
-
-    /* Adjust padding and stack the words for the specific header */
-    .reflective-header {
-        padding: 1rem 0;
-    }
-
-    .reflective-header h1 {
-        font-size: 0.5rem;
-        right: 10px;
-        top: 0;
-    }
-
-    .reflective-header h1::before,
-    .reflective-header h1::after {
-        content: "";
-        display: block;
-    }
-    /* Adjust header padding and font size for smaller screens */
-    header {
-        padding: 1rem 0;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-        right: 10px;
-        top: 0;
-    }
-
-    /* Adjust navigation menu layout for smaller screens */
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 0;
-        padding: 5px 0;
-    }
-
-    /* Apply styles to sections in the main content area */
-    section {
-        padding: 1rem;
-    }
-    /* Adjust layout for grid items */
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        
-    }
-
-    /* Style individual grid items */
-    .grid-item {
-        background-color: #fff;
-        padding: 1rem;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        max-width: 100%;
-        height: auto;
-        z-index: 0;
-        border-radius: 10px;
-        transition: box-shadow 0.3s;
-        text-align: center;
-    }
-    
-    /* Apply hover effect to grid items */
-    .grid-item:hover {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    /* Style images inside grid items */
-    .grid-item img {
-        max-width: 100%;
-        height: auto; 
-        display: block; 
-        margin: 0 auto; 
-        border-radius: 10px;
-        pointer-events: auto;
-    }
-
-    /* Style image overlays */
-    .image-overlay img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    p {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-}
 
 
 /* Apply consistent padding to sections in the main content area */
@@ -163,20 +68,6 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-/* Apply hover effect to grid items */
-.grid-item:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-}
-
-/* Style images inside grid items */
-.grid-item img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    pointer-events: auto;
-}
 
 /* Style the footer section */
 footer {
@@ -208,6 +99,9 @@ footer {
     border-radius: 10px;
 }
 
+
+
+
 /* Style general paragraphs */
 p {
     text-align: center;
@@ -217,7 +111,7 @@ p {
 /* Style level 2 headings */
 h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
 /* Style level 3 headings */
@@ -315,13 +209,160 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* Disable pointer events for grid items, allowing clicks to pass through */
-.grid-item{
-    pointer-events: none;
-}
-
 /* Enable pointer events for links within paragraphs */
 p a {
     pointer-events: auto; 
+}
+
+
+
+/* Style the container for grid items */
+.grid-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    margin-bottom: 20px;
+    
+}
+
+/* Style the images inside grid items */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    order: 1;
+    
+}
+
+/* Style the grid-content div inside grid-item */
+.grid-content {
+    flex: 1;
+    padding: 0 1rem; /* Add some horizontal padding to separate content from the image */
+    order: 2;
+}
+
+/* Style the h2 elements */
+.grid-content h2 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem;
+}
+
+/* Style the paragraphs inside grid items */
+.grid-content p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Add the hover effect for specific images */
+.image-hover:hover {
+    transform: scale(1.05); /* Scale the image up by 5% on hover */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /* Add a box shadow on hover */
+}
+
+/* Add a CSS class for the animated image */
+.animated-image {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Move it 20px down */
+    transition: opacity 1s, transform 1s; /* Transition properties */
+}
+
+/* Apply animation when the class is added */
+.animated-image.animate {
+    opacity: 1; /* Show the image */
+    transform: translateY(0); /* Move it back to its original position */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Adjust padding and stack the words for the specific header */
+    .reflective-header {
+        padding: 1rem 0;
+    }
+
+    .reflective-header h1 {
+        font-size: 0.5rem;
+        right: 10px;
+        top: 0;
+    }
+
+    .reflective-header h1::before,
+    .reflective-header h1::after {
+        content: "";
+        display: block;
+    }
+    
+    /* Adjust header padding and font size for smaller screens */
+    header {
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        right: 10px;
+        top: 0;
+    }
+
+    /* Adjust navigation menu layout for smaller screens */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    /* Apply styles to sections in the main content area */
+    section {
+        padding: 1rem;
+    }
+
+    /* Adjust layout for the grid container to two columns */
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-gap: 10px; /* Adjust the gap between columns */
+    }
+
+    /* Adjust layout for grid items */
+    .grid-item {
+        display: flex;
+        flex-direction: column; /* Stack image and paragraph vertically */
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+        border-radius: 10px;
+        transition: box-shadow 0.3s;
+    }
+    
+    /* Apply hover effect to grid items */
+    .grid-item:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Style the images inside grid items */
+    .grid-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        pointer-events: auto;
+    }
+    
+    /* Style the paragraphs inside grid items */
+    .grid-item p {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-left: 0; /* Remove the left margin to align with the image */
+    }
 }
 
